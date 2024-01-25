@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center">
                 <p className="text-xl mt-6 lg:mt-0"><span className="text-theme-red font-bold">LUKE</span> ANDREW COLEMAN</p>
                 <nav className='mt-4 lg:mt-0'>
-                    <ul className="flex gap-10">
+                    <ul className="flex gap-5 lg:gap-10">
                         <li className="hover:text-theme-red hover:scale-110">
                             <a href="#home">Home</a>
                         </li>

@@ -7,7 +7,7 @@ import TodoApp from "../assets/todoapp.png"
 const Projects = () => {
     return (
         <section id="projects">
-            <div className="container mx-auto mb-20 px-20">
+            <div className="container mx-auto mb-20 px-10 lg:px-20">
                 <h2 className="text-4xl font-bold mb-16 text-center">Personal Projects</h2>
                 <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-12 items-center mb-20">
                     <img className="rounded-xl lg:w-[50%]" src={CodeSnippets}/>
