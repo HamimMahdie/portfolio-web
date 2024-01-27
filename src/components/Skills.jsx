@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Image Imports
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import Javascript from '../assets/javascript.png'

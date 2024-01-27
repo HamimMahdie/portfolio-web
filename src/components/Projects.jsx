@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Image Imports
 import CodeSnippets from "../assets/codesnippets.png"
 import BeatMachine from "../assets/beatmachine.png"
 import TodoApp from "../assets/todoapp.png"
@@ -11,8 +12,9 @@ const Projects = () => {
                 <h2 className="text-4xl font-bold mb-16 text-center">Personal Projects</h2>
                 <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-12 items-center mb-20">
                     <img className="rounded-xl lg:w-[50%]" src={CodeSnippets}/>
-                    <div>
-                        <h3 className="text-theme-red mb-4">CODE SNIPPETS</h3>
+                    <div className="bg-card-bg p-8 rounded-xl">
+                        <h3 className="text-theme-red tracking-widest">CODE SNIPPETS</h3>
+                        <hr className="text-theme-red mb-8"/>
                         <div className="flex gap-4 items-center mb-4">
                             <p className="text-lg">Tech Stack | </p>
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +79,9 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-12 items-center mb-20">
                     <img className="rounded-xl lg:w-[50%]" src={BeatMachine}/>
-                    <div>
-                        <h3 className="text-theme-red mb-4">BEAT-MACHINE</h3>
+                    <div className="bg-card-bg p-8 rounded-xl">
+                        <h3 className="text-theme-red tracking-widest">BEAT-MACHINE</h3>
+                        <hr className="text-theme-red mb-8"/>
                         <div className="flex gap-4 items-center mb-4">
                             <p className="text-lg">Tech Stack | </p>
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -111,24 +114,32 @@ const Projects = () => {
                             </svg>
                         </div>
                         <p> Beat-Machine is a tool that allows users to create different beats by selecting different
-                            drum samples and changing the tempo</p> <br/>
+                            drum samples and changing the tempo.</p> <br/>
                         <p>The app’s interface is simple and user-friendly. Users can select from a variety of drum
                             samples and adjust the tempo to create their desired beat. The app was built with plain
-                            HTML, CSS and vanilla Javascript</p>
+                            HTML, CSS and vanilla Javascript.</p>
                         <div className="flex gap-3">
-                            <a href="https://github.com/LukeAndrewColeman/Beat-Machine" target="_blank" className="hover:scale-105">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code</button>
+                            <a href="https://github.com/LukeAndrewColeman/Beat-Machine" target="_blank"
+                               className="hover:scale-105">
+                                <button
+                                    className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code
+                                </button>
                             </a>
-                            <a href="https://lukeandrewcoleman.github.io/Beat-Machine/" target="_blank" className="hover:scale-105">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live Preview</button>
+                            <a href="https://lukeandrewcoleman.github.io/Beat-Machine/" target="_blank"
+                               className="hover:scale-105">
+                                <button
+                                    className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live
+                                    Preview
+                                </button>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-12 items-center mb-20">
                     <img className="rounded-xl lg:w-[50%]" src={TodoApp}/>
-                    <div>
-                        <h3 className="text-theme-red mb-4">TODO APP</h3>
+                    <div className="bg-card-bg p-8 rounded-xl">
+                        <h3 className="text-theme-red tracking-widest">TODO APP</h3>
+                        <hr className="text-theme-red mb-8"/>
                         <div className="flex gap-4 items-center mb-4">
                             <p className="text-lg">Tech Stack | </p>
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -169,11 +180,18 @@ const Projects = () => {
                             button next to each todo. The app is responsive and works well on both desktop and mobile
                             devices.</p>
                         <div className="flex gap-3">
-                            <a href="https://github.com/LukeAndrewColeman/Todo-List" target="_blank" className="hover:scale-105">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code</button>
+                            <a href="https://github.com/LukeAndrewColeman/Todo-List" target="_blank"
+                               className="hover:scale-105">
+                                <button
+                                    className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code
+                                </button>
                             </a>
-                            <a href="https://lukeandrewcoleman.github.io/Todo-List/" target="_blank" className="hover:scale-105">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live Preview</button>
+                            <a href="https://lukeandrewcoleman.github.io/Todo-List/" target="_blank"
+                               className="hover:scale-105">
+                                <button
+                                    className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live
+                                    Preview
+                                </button>
                             </a>
                         </div>
                     </div>

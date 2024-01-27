@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Image Imports
 import Arrow from "../assets/arrow-logo-white.png"
 import Alveo from "../assets/alveo-logo-white.png"
 import Ugp from "../assets/ugp-white-logo.png"

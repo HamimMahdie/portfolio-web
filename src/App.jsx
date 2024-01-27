@@ -1,8 +1,8 @@
 import './App.css'
 
+// Component Imports
 import Navbar from "./components/Navbar.jsx";
 import Header from "./components/Header.jsx";
-import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Work from "./components/Work.jsx";
