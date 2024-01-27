@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors: {
-      'theme-red': '#F9053D',
+      'theme-red': '#26C485',
       'card-bg': '#3a3e43'
     },
     extend: {},

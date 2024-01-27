@@ -27,7 +27,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
                 <a href={CV} target="_blank">
-                    <button className="py-2 px-6 bg-theme-red rounded-3xl hidden lg:block hover:scale-110">Download CV</button>
+                    <button className="py-2 px-6 bg-theme-red rounded-3xl hidden lg:block hover:scale-105 text-[#24292D] font-bold">Download CV</button>
                 </a>
 
             </div>

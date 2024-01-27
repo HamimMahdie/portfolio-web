@@ -57,8 +57,6 @@ const Work = () => {
                         </p>
                     </li>
                 </ol>
-
-
             </div>
         </section>
     );

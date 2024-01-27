@@ -66,11 +66,11 @@ const Projects = () => {
                             programming language and are accompanied by a brief description of their functionality. The
                             website also provides a search bar to help users find the snippets they need.</p>
                         <div className="flex gap-3">
-                            <a href="https://github.com/LukeAndrewColeman/code-snippets" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Code</button>
+                            <a href="https://github.com/LukeAndrewColeman/code-snippets" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code</button>
                             </a>
-                            <a href="https://code-snippets.netlify.app/" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Live Preview</button>
+                            <a href="https://code-snippets.netlify.app/" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live Preview</button>
                             </a>
                         </div>
                     </div>
@@ -116,11 +116,11 @@ const Projects = () => {
                             samples and adjust the tempo to create their desired beat. The app was built with plain
                             HTML, CSS and vanilla Javascript</p>
                         <div className="flex gap-3">
-                            <a href="https://github.com/LukeAndrewColeman/Beat-Machine" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Code</button>
+                            <a href="https://github.com/LukeAndrewColeman/Beat-Machine" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code</button>
                             </a>
-                            <a href="https://lukeandrewcoleman.github.io/Beat-Machine/" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Live Preview</button>
+                            <a href="https://lukeandrewcoleman.github.io/Beat-Machine/" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live Preview</button>
                             </a>
                         </div>
                     </div>
@@ -169,11 +169,11 @@ const Projects = () => {
                             button next to each todo. The app is responsive and works well on both desktop and mobile
                             devices.</p>
                         <div className="flex gap-3">
-                            <a href="https://github.com/LukeAndrewColeman/Todo-List" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Code</button>
+                            <a href="https://github.com/LukeAndrewColeman/Todo-List" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Code</button>
                             </a>
-                            <a href="https://lukeandrewcoleman.github.io/Todo-List/" target="_blank" className="hover:scale-110">
-                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl">Live Preview</button>
+                            <a href="https://lukeandrewcoleman.github.io/Todo-List/" target="_blank" className="hover:scale-105">
+                                <button className="py-2 px-6 mt-10 bg-theme-red rounded-3xl text-[#24292D] font-bold">Live Preview</button>
                             </a>
                         </div>
                     </div>
