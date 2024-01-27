@@ -3,7 +3,7 @@ import React from 'react';
 const Work = () => {
     return (
         <section id="work">
-            <div className="container mx-auto my-20 px-20">
+            <div className="container mx-auto my-20 px-10 lg:px-20">
                 <h2 className="text-4xl font-bold mb-10 text-center">Work Experience</h2>
                 <ol className="relative border-s border-theme-red dark:border-gray-700">
                     <li className="mb-10 ms-4">
