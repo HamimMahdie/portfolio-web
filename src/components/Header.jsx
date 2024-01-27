@@ -4,7 +4,7 @@ import HeaderImg from '../assets/header-svg.svg'
 
 const Header = () => {
     return (
-        <section id="home" className="container mx-auto grid grid-cols-1 items-center px-5 py-56">
+        <section id="home" className="container mx-auto grid grid-cols-1 items-center px-5 py-32 md:py-56">
             <div>
                 <div className="text-center">
                     <h1 className="font-bold text-6xl lg:text-7xl text-theme-red pb-6">Front End Developer</h1>

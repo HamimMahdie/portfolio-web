@@ -13,7 +13,7 @@ const Skills = () => {
         <section id="skills" className="mb-32">
             <div className="container mx-auto px-10 lg:px-20">
                 <h2 className="text-4xl font-bold mb-10 text-center">Skills</h2>
-                <div  className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-12">
+                <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-12">
                     <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
                         <img src={HTML} className="h-20 mb-4"/>
                         <h3>HTML</h3>
