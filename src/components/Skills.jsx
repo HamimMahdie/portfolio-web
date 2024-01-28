@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+import Rellax from 'rellax';
 
 // Image Imports
 import HTML from '../assets/html.png'
@@ -11,11 +13,21 @@ import GIT from '../assets/git.png'
 import Wordpress from '../assets/wordpress.png'
 
 const Skills = () => {
+
+    useEffect(() => {
+
+        const rellax = new Rellax('.rellax');
+
+        return () => {
+            rellax.destroy();
+        };
+    }, []);
+
     return (
-        <section id="skills" className="mb-32 scroll-mt-40">
+        <section id="skills" className="rellax mb-32 scroll-mt-40" data-rellax-speed="4">
             <div className="container mx-auto px-10 lg:px-20">
                 <h2 className="text-4xl font-bold mb-10 text-center">Skills</h2>
-                <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-12">
                     <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
                         <img src={HTML} className="h-20 mb-4"/>
                         <h3>HTML</h3>
