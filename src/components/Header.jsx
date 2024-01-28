@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <section id="home" className="container mx-auto grid grid-cols-1 items-center px-5 py-60 md:py-72">
             <div>
-                <div className="rellax text-center">
+                <div className="rellax text-center" data-rellax-speed="-4">
                     <h1 className="font-bold text-6xl lg:text-7xl text-theme-red pb-6">Front End Developer</h1>
                     <p className="mb-4 text-lg">Hi, I'm Luke Andrew Coleman, a passionate Front End Developer based in Bradford, West Yorkshire </p>
                     <div className="flex gap-2 justify-center items-center">
