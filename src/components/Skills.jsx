@@ -12,7 +12,7 @@ import Wordpress from '../assets/wordpress.png'
 
 const Skills = () => {
     return (
-        <section id="skills" className="mb-32">
+        <section id="skills" className="mb-32 scroll-mt-40">
             <div className="container mx-auto px-10 lg:px-20">
                 <h2 className="text-4xl font-bold mb-10 text-center">Skills</h2>
                 <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-12">
