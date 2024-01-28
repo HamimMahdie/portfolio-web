@@ -4,7 +4,7 @@ import CV from "../assets/luke-andrew-coleman-cv-2024.pdf"
 
 const Navbar = () => {
     return (
-        <div className="h-[10vh] bg-[#24292D] flex fixed w-full z-10">
+        <div className=" h-[15vh] md:h-[10vh] bg-[#24292D] flex fixed w-full z-10">
             <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center">
                 <p className="text-xl mt-6 lg:mt-0"><span className="text-theme-red font-bold">LUKE</span> ANDREW COLEMAN</p>
                 <nav className='mt-4 lg:mt-0'>
