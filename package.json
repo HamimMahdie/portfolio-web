@@ -10,8 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "easy-react-text-loop": "^1.0.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
+    "react-typed": "^2.0.12",
+    "react-typing-effect": "^2.0.5",
+    "react-typist": "^2.0.5",
+    "react-vertical-timeline-component": "^3.6.0",
     "rellax": "^1.12.1"
   },
   "devDependencies": {

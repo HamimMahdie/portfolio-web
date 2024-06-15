@@ -6,10 +6,7 @@ const About = () => {
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold mb-10 text-center">About Me</h2>
                 <div className="w-[900px] flex flex-col justify-center items-center mx-auto">
-                    <p className="text-center leading-relaxed">A passionate and detail-oriented web developer based in Bradford. With a
-                        love for crafting clean and efficient code, I specialize in creating engaging and user-friendly
-                        websites. My journey in web development has equipped me with a diverse skill set, ranging from
-                        front-end technologies like HTML, CSS, and JavaScript to back-end frameworks like Node.js.
+                    <p className="text-center leading-relaxed">Space for Description
                     </p>
                     {/*<br/>*/}
                     {/*<p className="text-center leading-relaxed">*/}

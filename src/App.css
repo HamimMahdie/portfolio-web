@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-Body {
+body {
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: #24292D;
@@ -22,6 +22,102 @@ button {
     cursor: pointer;
 }
 
-/*#skills {*/
-/*    scroll-margin-top: 20rem;*/
-/*}*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+}
+
+.main-badge, .experience-badge {
+    background-color: #24292D;
+    color: black;
+    font-size: 0.75em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.75em;
+    border-radius: .5em;
+}
+
+.vertical-timeline-element--work {
+    margin-bottom: 1em;
+}
+
+.vertical-timeline-element-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #24292D;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: #24292D;
+}
+
+.vertical-timeline-element-date {
+    color: #24292D;
+}
+
+.vertical-timeline-element-content {
+    background-color: #24292D;
+    color: #24292D;
+    box-shadow: 0 3px 0 #24292D, 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.vertical-timeline-element-content p {
+    color: #24292D;
+}
+
+.vertical-timeline-element-content .badge {
+    background-color: #020202;
+    color: white;
+}
+
+.text-loop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#work {
+    background-color: #24292D;
+}
+/* src/styles.css */
+.main-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mole {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mole:hover {
+    transform: scale(1.2);
+}
+
+.beaver-image {
+    width: 100px;
+    height: auto;
+}

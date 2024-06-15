@@ -1,65 +1,52 @@
-import React, {useEffect} from 'react';
-
+import React, { useEffect } from 'react';
 import Rellax from 'rellax';
-
-// Image Imports
-import HTML from '../assets/html.png'
-import CSS from '../assets/css.png'
-import Javascript from '../assets/javascript.png'
-import PHP from '../assets/php.png'
-import ReactImg from '../assets/react.png'
-import Tailwind from '../assets/tailwind.png'
-import GIT from '../assets/git.png'
-import Wordpress from '../assets/wordpress.png'
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaPython, FaFlask, FaGithub, FaGitlab, FaDocker, FaJava, FaGit, FaGoogle } from 'react-icons/fa';
+import { SiKubernetes, SiSpringboot, SiTensorflow, SiJavascript, SiSwift, SiPytorch, SiFirebase, SiJupyter, SiGooglecloud, SiMysql } from "react-icons/si";
 
 const Skills = () => {
 
     useEffect(() => {
-
         const rellax = new Rellax('.rellax');
-
         return () => {
             rellax.destroy();
         };
     }, []);
 
+    const skills = [
+        { icon: <FaPython className="w-24 h-24 mb-4" />, title: "Python" },
+        { icon: <FaJava className="w-24 h-24 mb-4" />, title: "Java" },
+        
+        { icon: <SiJavascript className="w-24 h-24 mb-4" />, title: "JavaScript" },
+        { icon: <SiSwift className="w-24 h-24 mb-4" />, title: "Swift" },
+        //{ icon: <SiMatlab className="w-24 h-24 mb-4" />, title: "MATLAB" },
+        { icon: <FaNodeJs className="w-24 h-24 mb-4" />, title: "NodeJs" },
+        { icon: <FaReact className="w-24 h-24 mb-4" />, title: "React" },
+        { icon: <SiSpringboot className="w-24 h-24 mb-4" />, title: "SpringBoot" },
+        { icon: <FaFlask className="w-24 h-24 mb-4" />, title: "Flask" },
+        { icon: <FaDocker className="w-24 h-24 mb-4" />, title: "Docker" },
+        { icon: <SiKubernetes className="w-24 h-24 mb-4" />, title: "Kubernetes" },
+        { icon: <SiGooglecloud className="w-24 h-24 mb-4" />, title: "Google Cloud" },
+        { icon: <SiMysql className="w-24 h-24 mb-4" />, title: "SQL" },
+        { icon: <SiFirebase className="w-24 h-24 mb-4" />, title: "Firebase" },
+        //{ icon: <FaGit className="w-24 h-24 mb-4" />, title: "Git" },
+        { icon: <SiTensorflow className="w-24 h-24 mb-4" />, title: "TensorFlow" },
+        { icon: <SiJupyter className="w-24 h-24 mb-4" />, title: "Jupyter Notebook" },
+        { icon: <SiPytorch className="w-24 h-24 mb-4" />, title: "PyTorch" }
+    ];
+
     return (
         <section id="skills" className="mb-32 scroll-mt-40">
-            <div className="container mx-auto px-10 lg:px-20">
-                <h2 className="text-4xl font-bold mb-10 text-center">Skills</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-12">
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={HTML} className="h-20 mb-4"/>
-                        <h3>HTML</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={CSS} className="h-20 mb-4"/>
-                        <h3>CSS</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={Javascript} className="h-20 mb-4"/>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={ReactImg} className="h-20 mb-4"/>
-                        <h3>React</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={Tailwind} className="h-20 mb-4"/>
-                        <h3>Tailwind</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={GIT} className="h-20 mb-4"/>
-                        <h3>GIT</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={PHP} className="h-20 mb-4"/>
-                        <h3>PHP</h3>
-                    </div>
-                    <div className="flex flex-col items-center bg-card-bg p-10 rounded-xl shadow-lg">
-                        <img src={Wordpress} className="h-20 mb-4"/>
-                        <h3>WordPress</h3>
-                    </div>
+            <div className="container mx-auto px-1 lg:px-20">
+                <div className="bg-highlight rounded-xl mb-16 text-center transition-all duration-200 ease-in-out transform hover:scale-150">
+                    <h2 className="font-bold text-5xl lg:text-5xl text-theme-red pb-6">Skills</h2>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                    {skills.map((skill, index) => (
+                        <div key={index} className="flex flex-col items-center">
+                            {skill.icon}
+                            <h3 className="mt-2 text-xl">{skill.title}</h3>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

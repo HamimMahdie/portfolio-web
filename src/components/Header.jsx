@@ -1,14 +1,44 @@
 import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 const Header = () => {
+    const titles = [
+        'Full Stack Developer',
+        'ML Research Assistant',
+        'IT Consultant',
+        'iOS Developer',
+        'React Enthusiast',
+    ];
+
     return (
         <section id="home" className="container mx-auto grid grid-cols-1 items-center px-5 py-60 md:py-72">
             <div>
                 <div className="rellax text-center" data-rellax-speed="-4">
-                    <h1 className="font-bold text-6xl lg:text-7xl text-theme-red pb-6">Front End Developer</h1>
-                    <p className="mb-4 text-lg">Hi, I'm Luke Andrew Coleman, a passionate Front End Developer based in Bradford, West Yorkshire </p>
+                    <h1 className="font-bold text-6xl lg:text-7xl text-theme-red pb-6">
+                        <ReactTypingEffect
+                            text={titles}
+                            speed={50}
+                            eraseSpeed={50}
+                            eraseDelay={1000}
+                            typingDelay={100}
+                            cursorRenderer={cursor => <span>{cursor}</span>}
+                            displayTextRenderer={(text, i) => {
+                                return (
+                                    <h1>
+                                        {text.split('').map((char, i) => {
+                                            const key = `${i}`;
+                                            return (
+                                                <span key={key}>{char}</span>
+                                            );
+                                        })}
+                                    </h1>
+                                );
+                            }}
+                        />
+                    </h1>
+                    <p className="mb-4 text-lg">Hi, I'm Hamim Mahdie and I love to code! </p>
                     <div className="flex gap-2 justify-center items-center">
-                        <a className="cursor-pointer" href="https://www.linkedin.com/in/luke-andrew-coleman/" target="_blank">
+                        <a className="cursor-pointer" href="https://www.linkedin.com/in/hamim-mahdie-5455ab1b2/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 448 512"
                                  className="w-10 h-10 fill-white cursor-pointer hover:scale-110"
@@ -17,7 +47,7 @@ const Header = () => {
                                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
                             </svg>
                         </a>
-                        <a className="cursor-pointer" href="https://github.com/LukeAndrewColeman" target="_blank">
+                        <a className="cursor-pointer" href="https://github.com/HamimMahdie" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 448 512"
                                  className="w-10 h-10 fill-white cursor-pointer hover:scale-110"

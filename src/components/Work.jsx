@@ -1,65 +1,94 @@
-import React from 'react';
+import React, { Component } from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import Badge from "react-bootstrap/Badge";
 
-const Work = () => {
-    return (
-        <section id="work" className="scroll-mt-40">
-            <div className="container mx-auto my-20 px-10 lg:px-20">
-                <h2 className="text-4xl font-bold mb-10 text-center">Work Experience</h2>
-                <ol className="relative border-s border-theme-red dark:border-gray-700">
-                    <li className="mb-10 ms-4">
-                        <div
-                            className="absolute w-3 h-3 bg-theme-red rounded-full mt-1.5 -start-1.5 border border-theme-red dark:border-gray-900 dark:bg-gray-700"></div>
-                        <h3 className="text-lg font-semibold text-gray-900 text-theme-red">Front End Developer - WISH
-                            AGENCY
-                        </h3>
-                        <time
-                            className="mb-1 text-sm font-light leading-none text-gray-400 dark:text-gray-500">April
-                            2022 - Present
-                        </time>
-                        <p className="mb-4 mt-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Assisted in the development of client websites, adhering to best practices in coding and
-                            design principles. Implemented responsive design techniques to enhance user experience
-                            across various devices and ensured cross-browser compatibility and optimized website
-                            performance for seamless user experiences.
-                            I continuously learn and develop my skills to stay current with evolving web technologies.
-                        </p>
-                    </li>
-                    <li className="mb-10 ms-4">
-                        <div
-                            className="absolute w-3 h-3 bg-theme-red rounded-full mt-1.5 -start-1.5 border border-theme-red dark:border-gray-900 dark:bg-gray-700"></div>
-                        <h3 className="text-lg font-semibold text-gray-900 text-theme-red"> Designer / AV Engineer -
-                            FINITE SOLUTIONS
-                        </h3>
-                        <time
-                            className="mb-1 text-sm font-light leading-none text-gray-400 dark:text-gray-500">September
-                            2014 - April 2022
-                        </time>
-                        <p className="mb-4 mt-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Responsible for comprehensive system design, documentation, installation, and testing of
-                            cutting-edge smart home control systems and intelligent lighting solutions. Led cinema
-                            design initiatives and crafted compelling proposals for both cinema and complete smart home
-                            systems.
-                        </p>
-                    </li>
-                    <li className="mb-10 ms-4">
-                        <div
-                            className="absolute w-3 h-3 bg-theme-red rounded-full mt-1.5 -start-1.5 border border-theme-red dark:border-gray-900 dark:bg-gray-700"></div>
-                        <h3 className="text-lg font-semibold text-gray-900 text-theme-red">Electrician - J&R
-                            ELECTRICAL</h3>
-                        <time
-                            className="mb-1 text-sm font-light leading-none text-gray-400 dark:text-gray-500">October
-                            2013 - September 2014
-                        </time>
-                        <p className="mb-4 mt-4 text-base font-normal text-gray-500 dark:text-gray-400">Installation and
-                            meticulous testing of electrical systems, encompassing power, lighting, and data provisions
-                            for both residential and commercial settings ensuring that every aspect adheres to the most
-                            stringent standards, guaranteeing excellence in both functionality and safety.
-                        </p>
-                    </li>
-                </ol>
+class Work extends Component {
+  render() {
+    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
+      var sectionName = this.props.resumeBasicInfo.section_name.experience;
+      var work = this.props.resumeExperience.map(function (work, i) {
+        const technologies = work.technologies;
+        const mainTechnologies = work.mainTech;
+
+        var mainTech = mainTechnologies.map((technology, i) => {
+          return (
+            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
+          );
+        });
+        var tech = technologies.map((technology, i) => {
+          return (
+            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
+          );
+        });
+        return (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date={work.years}
+            iconStyle={{
+              background: "#AE944F",
+              color: "#fff",
+              textAlign: "center",
+            }}
+            icon={<i className="fab fa-angular experience-icon"></i>}
+            key={i}
+          >
+            <div style={{ textAlign: "left", marginBottom: "4px" }}>
+              {mainTech}
             </div>
-        </section>
+
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ textAlign: "left" }}
+            >
+              {work.title}
+            </h3>
+            <h4
+              className="vertical-timeline-element-subtitle"
+              style={{ textAlign: "left" }}
+            >
+              {work.company}
+            </h4>
+            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            <p style={{ textAlign: "left", marginTop: "15px" }}>{work.description}</p>
+          </VerticalTimelineElement>
+        );
+      });
+    }
+
+    return (
+      <section id="work" className="scroll-mt-40">
+        <div className="container mx-auto my-20 px-10 lg:px-20">
+            
+          <div className="bg-highlight rounded-xl mb-16 text-center transition-all duration-200 ease-in-out transform hover:scale-150">
+                    <h2 className="font-bold text-5xl lg:text-5xl text-theme-red pb-6">Experience</h2>
+                </div>
+          <div className="col-md-12 mx-auto">
+            <VerticalTimeline>
+              {work}
+              <VerticalTimelineElement
+                iconStyle={{
+                  background: "#AE944F",
+                  color: "#fff",
+                  textAlign: "center",
+                }}
+                icon={
+                  <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
+                }
+              />
+            </VerticalTimeline>
+          </div>
+        </div>
+      </section>
     );
-};
+  }
+}
 
 export default Work;
