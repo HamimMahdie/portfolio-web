@@ -121,3 +121,23 @@ body, html {
     width: 100px;
     height: auto;
 }
+
+
+/* Add this to your App.css */
+section {
+    padding: 100px 0; /* Adjust padding as needed */
+  }
+
+  .start-button {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}

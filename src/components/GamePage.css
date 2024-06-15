@@ -1,0 +1,8 @@
+.game-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1400px;
+    width: 1280;
+    background-color: #000000;
+}

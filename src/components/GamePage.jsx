@@ -1,12 +1,10 @@
-
-// src/components/GamePage.jsx
 import React from 'react';
-import MainComponent from './MainComponent';
+import MainComponent from './MainComponent.jsx';
+import './GamePage.css';
 
 const GamePage = () => {
     return (
-        <div className="game-page">
-            <h1>Whack-a-Mole Game</h1>
+        <div className="game-page-container">
             <MainComponent />
         </div>
     );

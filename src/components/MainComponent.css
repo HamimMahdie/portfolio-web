@@ -1,0 +1,48 @@
+.main-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    padding: 20px;
+    height: 720x; /* Adjust based on the new dimensions */
+    width: 1280px; /* Adjust based on the new dimensions */
+    background-color: #eb0c0c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 4691px; /* Ensure the max-width matches the game container */
+    margin: 0 auto; /* Center the main container */
+}
+
+.game-area {
+    position: center;
+    height: 720px; /* Adjust based on the new dimensions */
+    width: 1180px; /* Adjust based on the new dimensions */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('../assets/mole-bg.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto; /* Center the game area */
+}
+
+.mole {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10; /* Ensure the mole is on top */
+}
+
+.beaver-image {
+    width: 100px; /* Adjust the width as needed */
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}

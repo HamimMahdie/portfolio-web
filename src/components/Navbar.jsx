@@ -23,11 +23,12 @@ const Navbar = () => {
                             <a href="#work">Work</a>
                         </li>
                         <li className="hover:text-theme-red hover:scale-110">
-                            <a href="#contact">Contact</a>
+                            <a href="#arcade">Arcade</a>
                         </li>
                         <li className="hover:text-theme-red hover:scale-110">
-                            <a href="/arcade">Arcade</a>
+                            <a href="#contact">Contact</a>
                         </li>
+                        
                     </ul>
                 </nav>
                 <a href={CV} target="_blank" rel="noopener noreferrer">

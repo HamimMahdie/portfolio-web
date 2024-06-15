@@ -1,8 +1,4 @@
-import './App.css'
-//import MainComponent from './components/MainComponent';
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-//import GamePage from './components/GamePage';
+import './App.css';
 
 // Component Imports
 import Navbar from "./components/Navbar.jsx";
@@ -12,6 +8,8 @@ import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Clients from "./components/Clients.jsx";
 import Work from './components/Work.jsx';
+import MainComponent from './components/MainComponent.jsx';
+import GamePage from './components/GamePage.jsx';
 
 const sampleExperience = [
   {
@@ -46,24 +44,34 @@ const sampleBasicInfo = {
   }
 };
 
-
-
-
-
 function App() {
   return (
     <>
-        <Navbar />
-
+      <Navbar />
+      <section id="home">
         <Header />
+      </section>
+      <section id="skills">
         <Skills />
+      </section>
+      <section id="projects">
         <Projects />
+      </section>
+      <section id="work">
         <Work resumeExperience={sampleExperience} resumeBasicInfo={sampleBasicInfo} />
+      </section>
+      <section id="clients">
         <Clients />
+      </section>
+      <section id="arcade">
+        <GamePage />
+      </section>
+      <section id="contact">
         <Contact />
+      </section>
+      
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;
