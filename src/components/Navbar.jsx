@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from "../assets/luke-andrew-coleman-cv-2024.pdf";
+import CV from "../assets/resume-Mahdie,Hamim.pdf";
 
 const Navbar = () => {
     return (

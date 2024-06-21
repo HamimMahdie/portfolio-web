@@ -11,11 +11,20 @@ const Contact = () => {
                     <h2 className="font-bold text-4xl lg:text-5xl text-theme-red pb-6">Contact Me</h2>
                 </div>
                 <div className="w-[70%] md:w-[60%] text-center">
-                    <p>
-                        Let's build something together. 
+                    <p> 
+                    <br />
                         <br />
                         <br />
-                        I'm also open to job/internship opportunities within the web development, SWE, and ML fields. If you have any job opportunities or just fancy a chat, please use the links below to get in touch.
+                        <br />
+                        <br />
+                        
+                        Let's build something together! 
+                        <br />
+                        <br />
+                        I'm open to job/internship opportunities within the web development, SWE & ML fields. Let's get in touch.
+                        <br />
+                        <br />
+                        If you like my work, <a href="https://buymeacoffee.com/hamimmahdie" target="_blank" rel="noopener noreferrer">buy me a coffee</a>.
                     </p>
                     <div className="flex gap-6 mt-10 justify-center">
                         <a href="https://www.linkedin.com/in/hamim-mahdie-5455ab1b2/" target="_blank" rel="noopener noreferrer" className="text-4xl text-theme-red hover:text-theme-dark-red transition-transform transform hover:scale-110">

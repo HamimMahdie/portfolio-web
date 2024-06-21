@@ -36,7 +36,25 @@ const Header = () => {
                             }}
                         />
                     </h1>
-                    <p className="mb-4 text-lg">Hi, I'm Hamim Mahdie and I love to code! </p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p className="mb-4 text-lg">Hi, I'm Hamim Mahdie from Hartford, CT. 
+                        <br/>
+                        From aspiring to be a 'cool' hacker to printing countless 'Hello World's, I found my calling for programming and computer science.</p>
+                        <br/>
+                        
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        
+                        <p className='mb-4 text-lg'>While you're here, <a href="#arcade" className="text-theme-red hover:underline">try whacking a mole!</a>
+                        </p>
+                    
                     <div className="flex gap-2 justify-center items-center">
                         <a className="cursor-pointer" href="https://www.linkedin.com/in/hamim-mahdie-5455ab1b2/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg"

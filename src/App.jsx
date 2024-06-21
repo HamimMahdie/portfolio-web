@@ -8,41 +8,64 @@ import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Clients from "./components/Clients.jsx";
 import Work from './components/Work.jsx';
-import MainComponent from './components/MainComponent.jsx';
 import GamePage from './components/GamePage.jsx';
 
 const sampleExperience = [
   {
-    title: "Front End Developer",
-    company: "WISH AGENCY",
-    years: "April 2022 - Present",
-    mainTech: ["React", "JavaScript"],
-    technologies: ["HTML", "CSS", "React", "JavaScript"],
-    description: "Assisted in the development of client websites, adhering to best practices in coding and design principles. Implemented responsive design techniques to enhance user experience across various devices and ensured cross-browser compatibility and optimized website performance for seamless user experiences. I continuously learn and develop my skills to stay current with evolving web technologies."
+      title: "Machine Learning Research Assistant",
+      company: "Professor Dr. Victor Churchill, Department of Mathematics, Trinity College",
+      years: "January 2024 - Present",
+      mainTech: ["ML","DL","Economic Analysis", "Data Analysis"],
+      technologies: ["PyTorch",  "TensorFlow","Scikit-Learn",  "Keras", "Google Colab"],
+      description: "Enhancing economic fraud detection in auto insurance claims with machine learning. Utilized Scikit-Learn, TensorFlow, NumPy, and Keras for model development, conducting over 100 experiments to fine-tune parameters and optimize performance. Analyzed comprehensive datasets and applied data preprocessing and one-hot-encoding to leverage categorical variables, improving model accuracy from 70-80% to at least 90%. Conducted a comparative study on deep learning architectures (e.g., LSTM, DNN) and machine learning models (e.g., Random Forest, XGBoost) to identify the appropriate algorithms for the dataset."
+    },
+    {
+      title: "IT Consultant",
+      company: "Library and IT Services, Trinity College",
+      years: "January 2024 - Present",
+      mainTech: ["Tech Support", "Access Control", "Client Management"],
+      technologies: ["Microsoft Azure", "Salto Systems", "Troubleshooting"],
+      description: "Provided tech troubleshooting to students/staff on 75 issues weekly on ishelp ticketing system, resolving 100% within target timeframes. Guided library patrons in utilizing the 900,000+ collection resources. Configured and maintained multi-factor authentication controls using Microsoft Azure and implemented Salto Systems for access control, enhancing security protocols and access management across campus facilities."
+    },
+    
+  {
+    title: "Writing Associate",
+    company: "Allan K. Smith Center for Writing and Rhetoric, Trinity College",
+    years: "September 2023 - Present",
+    mainTech: ["Writing Consultation", "AI Impact Assessment"],
+    technologies: ["GenAi Writing","Creative Writing","Feedback Delivery"],
+    description: "Offered writing consultations, delivering constructive feedback to improve undergraduate/graduate-level writing. Developed “Trinity WritingAid” GPT as a research prototype that demonstrates how an AI tool can effectively support student learning while minimizing risks to educational integrity."
   },
   {
-    title: "Designer / AV Engineer",
-    company: "FINITE SOLUTIONS",
-    years: "September 2014 - April 2022",
-    mainTech: ["Design", "AV Engineering"],
-    technologies: ["AutoCAD", "Photoshop", "Smart Home Systems"],
-    description: "Responsible for comprehensive system design, documentation, installation, and testing of cutting-edge smart home control systems and intelligent lighting solutions. Led cinema design initiatives and crafted compelling proposals for both cinema and complete smart home systems."
+    title: "Resident Advisor/Assistant",
+    company: "Bantam Network Residential Learning Community, Trinity College",
+    years: "August 2023 - May 2024",
+    mainTech: ["Community Building", "Planning", "Emergency Response"],
+    technologies: ["Conflict Resolution", "Sustainability Initiatives"],
+    description: "Organized and led 5 events every semester attended by 70% of dorm residents to promote community building, sustainability initiatives, and social responsibility.Mediated resident issues through empathy-based counseling approach resulting in conflict resolutions and no conduct violations."
   },
-  {
-    title: "Electrician",
-    company: "J&R ELECTRICAL",
-    years: "October 2013 - September 2014",
-    mainTech: ["Electrical Work"],
-    technologies: ["Wiring", "Lighting", "Safety Standards"],
-    description: "Installation and meticulous testing of electrical systems, encompassing power, lighting, and data provisions for both residential and commercial settings ensuring that every aspect adheres to the most stringent standards, guaranteeing excellence in both functionality and safety."
-  }
 ];
+
 
 const sampleBasicInfo = {
   section_name: {
     experience: "Work Experience"
   }
 };
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
 
 function App() {
   return (

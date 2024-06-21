@@ -1,41 +1,124 @@
-.main-container {
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/MyFont.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #24292D;
+}
+
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.start-button {
+    position: absolute; /* Ensure the button is positioned relative to its parent */
+    top: 40%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    font-size: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', sans-serif;
+    animation: pop 2.5s ease-in-out infinite;     
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+
+}
+
+
+.start-button:hover {
+    
+    background-color: #45a049;
+}
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #24292d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    height: 720x; /* Adjust based on the new dimensions */
-    width: 1280px; /* Adjust based on the new dimensions */
-    background-color: #eb0c0c;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #27c485;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 4691px; /* Ensure the max-width matches the game container */
-    margin: 0 auto; /* Center the main container */
+    max-width: 1380px; /* Adjust based on the desired width */
+    margin: -600px auto 0 auto; /* Center the main container and reduce bottom margin */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+
 }
 
 .game-area {
-    position: center;
+    
+    position: relative;
     height: 720px; /* Adjust based on the new dimensions */
-    width: 1180px; /* Adjust based on the new dimensions */
+    width: 1280px; /* Adjust based on the new dimensions */
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     background: url('../assets/mole-bg.png') no-repeat center center;
     background-size: cover;
     margin: 0 auto; /* Center the game area */
+    cursor: url('../assets/mole-cursor.png'), auto;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
 
 .mole {
     position: absolute;
     cursor: pointer;
     z-index: 10; /* Ensure the mole is on top */
+    transition: transform 0.2s ease-in-out;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+}
+
+.mole:hover {
+    transform: scale(1.2);
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
 
 .beaver-image {
     width: 100px; /* Adjust the width as needed */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
 
-.start-button {
+.arcade {
     padding: 10px 20px;
-    font-size: 24px;
+    font-family: 'Press Start 2P', sans-serif; /* Apply Google font */
+    font-size: 57px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -43,6 +126,93 @@
     cursor: pointer;
 }
 
-.start-button:hover {
+.arcade:hover {
     background-color: #45a049;
 }
+
+.game-title {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 52px;
+    font-family: 'Press Start 2P', sans-serif;;
+    color: white;
+}
+
+.game-score {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-family: 'Press Start 2P', sans-serif;;
+    color: white;
+}
+
+.restart-button {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background-color: #d32f2f;
+}
+
+.volume-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 38px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.volume-button:hover {
+    color: #ccc;
+}
+
+/* Add this style for the second button */
+.volume-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 18px; /* Adjust font size for text */
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.volume-button svg {
+    font-size: 28px; /* Adjust font size for icons */
+}
+
+.volume-button:hover {
+    color: #ccc;
+}
+
+/* Adjust the second button position */
+.volume-button + .volume-button {
+    margin-top: 10px; /* Add spacing between the buttons */
+}
+
+
+
