@@ -14,6 +14,16 @@ h2 {
     color: white;
 }
 
+.typing-container {
+    height: 90px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 
 
 button {
@@ -163,9 +173,9 @@ body, html {
 
 
 .experience-icon {
-    margin-top: 12px;
+    margin-top: 8px;
     
-    font-size: 2em; /* Adjust the size as needed */
+    font-size: 1.5em; /* Adjust the size as needed */
   }
   
   #clients {

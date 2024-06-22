@@ -14,29 +14,31 @@ const Header = () => {
         <section id="home" className="container mx-auto grid grid-cols-1 items-center px-5 py-60 md:py-72">
             <div>
                 <div className="rellax text-center" data-rellax-speed="-4">
-                    <h1 className="font-bold text-6xl lg:text-7xl text-theme-red pb-6">
-                        <ReactTypingEffect
-                            text={titles}
-                            speed={50}
-                            eraseSpeed={50}
-                            eraseDelay={1000}
-                            typingDelay={100}
-                            cursorRenderer={cursor => <span>{cursor}</span>}
-                            displayTextRenderer={(text, i) => {
-                                return (
-                                    <h1>
-                                        {text.split('').map((char, i) => {
-                                            const key = `${i}`;
-                                            return (
-                                                <span key={key}>{char}</span>
-                                            );
-                                        })}
-                                    </h1>
-                                );
-                            }}
-                        />
-                    </h1>
-                    <br/>
+                    <div className="typing-container">
+                        <h1 className="font-bold text-6xl lg:text-5xl text-theme-red pb-6">
+                            <ReactTypingEffect
+                                text={titles}
+                                speed={50}
+                                eraseSpeed={50}
+                                eraseDelay={1000}
+                                typingDelay={100}
+                                cursorRenderer={cursor => <span>{cursor}</span>}
+                                displayTextRenderer={(text, i) => {
+                                    return (
+                                        <h1>
+                                            {text.split('').map((char, i) => {
+                                                const key = `${i}`;
+                                                return (
+                                                    <span key={key}>{char}</span>
+                                                );
+                                            })}
+                                        </h1>
+                                    );
+                                }}
+                            />
+                        </h1>
+                    </div>
+                
                     <br/>
                     <br/>
                     <p className="mb-4 text-lg">Hi, I'm Hamim Mahdie from Hartford, CT. 
