@@ -10,16 +10,9 @@ const Contact = () => {
                 <div className="bg-highlight rounded-xl mb-16 text-center transition-all duration-200 ease-in-out transform hover:scale-150">
                     <h2 className="font-bold text-4xl lg:text-5xl text-theme-red pb-6">Contact Me</h2>
                 </div>
-                <div className="w-[70%] md:w-[60%] text-center">
+                <div className="w-[100%] md:w-[80%] text-center">
                     <p> 
-                    <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        
                         Let's build something together! 
-                        <br />
                         <br />
                         I'm open to job/internship opportunities within the web development, SWE & ML fields. Let's get in touch.
                         <br />

@@ -1,0 +1,100 @@
+/* Navbar container */
+.navbar {
+    height: 15vh;
+    background-color: #24292D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 10vh;
+    }
+}
+
+/* Inner container to hold logo and links */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Logo */
+.navbar-logo {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .navbar-logo {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+}
+
+/* Logo link */
+.navbar-logo-link {
+    color: #FF6347;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.navbar-nav {
+    margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .navbar-nav {
+        margin-top: 0;
+    }
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .navbar-links {
+        gap: 2.5rem;
+    }
+}
+
+.navbar-item {
+    transition: all 0.3s ease;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-item:hover .navbar-link {
+    color: #FF6347;
+    transform: scale(1.1);
+}

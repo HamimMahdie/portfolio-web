@@ -15,14 +15,21 @@ h2 {
 }
 
 .typing-container {
-    height: 90px; /* Adjust the height as needed */
+    width: 100%;
+    min-height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: normal; /* Allow wrapping */
+    text-align: center; /* Center text within the container */
     overflow: hidden;
-    white-space: nowrap;
 }
 
+.typing-container h1 {
+    display: inline-block;
+    white-space: normal; /* Ensure individual characters can wrap */
+    word-break: break-word; /* Break long words if needed */
+}
 
 
 
@@ -122,6 +129,8 @@ body, html {
 .main-badge, .experience-badge {
     background-color: #4587be;
     color: black;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 0.75em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
@@ -187,4 +196,15 @@ body, html {
 
 
 
-
+        .game-container {
+            width: 100%;
+            height: 500px; /* Adjust the height as needed */
+            margin: 0 auto;
+            border: 2px solid #ccc; /* Optional styling for the iframe */
+            overflow: hidden;
+        }
+        .game-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }

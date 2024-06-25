@@ -7,15 +7,21 @@ const Mole = ({ onWhack }) => {
 
     useEffect(() => {
         const showMole = () => {
-        
-        const bottom = Math.random() * (720 - 620); // Ensure mole stays within 720px height, adjust 100px for image size, showing only in the bottom half
-        const left = Math.random() * (1280 - 100); // Ensure mole stays within 1280px width, adjust 100px for image size
-        setPosition({bottom, left });
-        setVisible(true);
-        setTimeout(() => setVisible(false), 1500); // Mole stays visible longer (1.5 seconds)
+            const gameArea = document.querySelector('.game-area');
+            const gameAreaHeight = gameArea.offsetHeight;
+            const gameAreaWidth = gameArea.offsetWidth;
+            const moleHeight = 180; // Adjust based on actual image height
+            const moleWidth = 100; // Adjust based on actual image width
+
+            // Ensure mole stays within the bottom half of the game area
+            const bottom = Math.random() * (gameAreaHeight / 2 - moleHeight);
+            const left = Math.random() * (gameAreaWidth - moleWidth);
+            setPosition({ bottom, left });
+            setVisible(true);
+            setTimeout(() => setVisible(false), 1500);
         };
-        showMole(); // Show mole immediately upon mount
-        }, []);
+        showMole();
+    }, []);
 
     const handleClick = () => {
         setVisible(false);
