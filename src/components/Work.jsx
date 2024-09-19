@@ -15,6 +15,7 @@ class Work extends Component {
         "Writing Associate": "fa-pen",
         "Machine Learning Research Assistant": "fa-robot",
         "IT Consultant": "fa-laptop",
+        "AI Engineering Intern": "fa-robot"
       };
       const work = this.props.resumeExperience.map((work, i) => {
         const technologies = work.technologies;
