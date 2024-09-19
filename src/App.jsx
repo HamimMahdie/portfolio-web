@@ -22,7 +22,7 @@ const sampleExperience = [
   {
       title: "Machine Learning Research Assistant",
       company: "Professor Dr. Victor Churchill, Department of Mathematics, Trinity College",
-      years: "January 2024 - Present",
+      years: "January 2024 - July 2024",
       mainTech: ["Machine Learning","Deep Learning","Economic Analysis", "Data Analysis"],
       technologies: ["PyTorch",  "TensorFlow","Scikit-Learn",  "Keras", "Google Colab"],
       description: "Enhancing economic fraud detection in auto insurance claims with machine learning. Utilized Scikit-Learn, TensorFlow, NumPy, and Keras for model development, conducting over 100 experiments to fine-tune parameters and optimize performance. Analyzed comprehensive datasets and applied data preprocessing and one-hot-encoding to leverage categorical variables, improving model accuracy from 70-80% to at least 90%. Conducted a comparative study on deep learning architectures (e.g., LSTM, DNN) and machine learning models (e.g., Random Forest, XGBoost) to identify the appropriate algorithms for the dataset."
