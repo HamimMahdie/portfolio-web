@@ -44,7 +44,7 @@ const Header = () => {
                     <br/>
                     <p className="mb-4 text-lg">Hi, I'm Hamim Mahdie from Hartford, CT. 
                         <br/>
-                        From aspiring to be a 'cool' hacker to printing countless 'Hello World's, I found my calling for programming and computer science.</p>
+                        From aspiring to be a 'cool' hacker to printing countless 'Hello World's, I found my calling for programming and computer science. Check out my latest project here <a> "https://stocker-finance.netlify.app/" </a> </p>
                         <br/>
                         <a href={CV} target="_blank" rel="noopener noreferrer">
                         <button className="py-2 px-6 bg-theme-red rounded-3xl hover:scale-105 text-[#24292D] font-bold mb-4">
