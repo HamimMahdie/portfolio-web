@@ -18,7 +18,7 @@ const sampleExperience = [
       mainTech: ["Gemini","Vector Storage","LLMs", "RAG"],
       technologies: ["Python",  "Streamlit","Google Cloud Platform"],
       description: "Built AI components with LangChain to streamline NLP workflows, reducing query resolution times by 18%. Optimized backend using FastAPI and Uvicorn, reducing latency and boosting throughput. Collaborated with a globally distributed team using GitHub, Slack, and Butter, ensuring timely project delivery."
-    }
+    },
   {
       title: "Machine Learning Research Assistant",
       company: "Professor Dr. Victor Churchill, Department of Mathematics, Trinity College",
