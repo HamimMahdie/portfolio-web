@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-import CV from "../assets/resume-Mahdie,Hamim.pdf";
+import CV from "../assets/resume.pdf";
 
 const Header = () => {
     const titles = [
